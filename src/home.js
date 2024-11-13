@@ -5,24 +5,11 @@ import './home.css';
 function Home() {
   return (
     <div className="home-container">
-      <header className="navbar">
-        <div className="logo">Hospital Management System</div>
-        <nav>
-          <ul className="nav-links">
-            <li><Link to="/home">Home</Link></li>
-            <li><Link to="/home">About</Link></li>
-            <li><Link to="/home">Services</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/login" id='login-button'>Login</Link></li>
-          </ul>
-        </nav>
-      </header>
-
       <section className="hero-section">
         <div className="hero-content">
           <h1>Welcome to Our Hospital</h1>
           <p>Your health is our top priority</p>
-          <Link to="/login" className="cta-button">Explore Services</Link>
+          <Link to="/service" className="cta-button">Explore Services</Link>
         </div>
       </section>
 
@@ -48,7 +35,6 @@ function Home() {
         </div>
       </section>
 
-      {/* New Sections */}
       <section className="additional-section">
         <h2>Additional Features</h2>
         <div className="additional-grid">

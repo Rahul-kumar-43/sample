@@ -1,79 +1,77 @@
-/* Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #2c3e50;
-  }
-  
-  .logo {
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,208,250,1) 48%, rgba(104,104,161,1) 83%);
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  border-radius: 4px;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
+    display: none;
+  }
+
+  .nav-links-mobile {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #2c3e50;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
   }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    padding: 8px 12px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-links li a:hover {
-    background-color: #2980b9;
-    border-radius: 4px;
-  }
-  
+
   .mobile-menu-icon {
-    display: none;
-    font-size: 28px;
-    color: #fff;
-    background: none;
-    border: none;
-    cursor: pointer;
+    display: block;
   }
-  
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-  
-    .nav-links-mobile {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 80px;
-      right: 0;
-      background-color: #2c3e50;
-      width: 100%;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .mobile-menu-icon {
-      display: block;
-    }
-  }
-  
+}

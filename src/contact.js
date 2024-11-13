@@ -2,6 +2,9 @@ import React from 'react';
 import './contact.css';
 
 const ContactPage = () => {
+  const ontSubmit = () =>{
+    alert("Your Message is sent .You get reply soon...")
+  }
   return (
     <div className="contact-container">
       <h1>Contact Us</h1>
@@ -10,7 +13,7 @@ const ContactPage = () => {
       <div className="contact-info">
         <div className="info-item">
           <h3>Address:</h3>
-          <p>123 Health Avenue, Medical City, Country</p>
+          <p>Kotha no 23, GB road New Delhi </p>
         </div>
         
         <div className="info-item">
@@ -34,7 +37,7 @@ const ContactPage = () => {
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit" onClick={ontSubmit}>Submit</button>
       </form>
     </div>
   );

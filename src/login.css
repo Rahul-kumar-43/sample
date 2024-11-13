@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background:url(624111.webp)
+    background:url(826888-hospital-wallpapers-1920x1080-for-mac.jpg)
    no-repeat; 
   background-size: cover;
   background-position: center;
@@ -84,6 +84,7 @@
   .reg-link p {
     margin: 0;
     font-size: 0.9rem;
+    color: black;
   }
   
   .reg-link a {

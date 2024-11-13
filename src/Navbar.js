@@ -8,10 +8,11 @@ const Navbar = () => {
     <nav className="navbar">
       <h1 className="logo">Hospital Management</h1>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setIsMobile(false)}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/about">About Us</a></li>
+        <li><a href="/home  ">Home</a></li>
+        <li><a href="/service">Services</a></li>
+        <li><a href="/About">About Us</a></li>
         <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/login">Login</a></li>
       </ul>
       <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
         {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}

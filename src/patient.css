@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.patient-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.patient-list,
+.form-section,
+.patient-details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.patient-details p {
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+    .patient-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .patient-list,
+    .form-section,
+    .patient-details {
+        width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .patient-list,
+    .form-section,
+    .patient-details {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    input,
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
